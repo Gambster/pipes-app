@@ -96,8 +96,5 @@ export default class UncommonPageComponent {
     }, 3500);
   });
 
-  myObservableTimer = interval(2000).pipe(
-    map((value) => value + 1),
-    tap((value) => console.log('tap: ', value))
-  );
+  myObservableTimer = interval(2000).pipe(map((value) => value + 1));
 }
